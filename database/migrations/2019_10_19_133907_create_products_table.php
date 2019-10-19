@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('cover_image');
             $table->float('price');
             $table->unsignedBigInteger('genre_id')->nullable();
+            $table->unsignedBigInteger('store_id');
             $table->integer('status')->default(1);
             $table->timestamps();
         });

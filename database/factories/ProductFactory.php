@@ -15,6 +15,7 @@ $factory->define(Product::class, function (Faker $faker) {
         'description' => $sentence,
         'price' => random_int(100, 10000),
         'genre_id' => rand(1, 3),
+        'store_id' => rand(1,10),
         'status' => 1,
         'cover_image' => $faker->randomElement([
             'alexi-romano-CCx6Fz_CmOI-unsplash.jpg',

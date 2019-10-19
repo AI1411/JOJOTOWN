@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 //ログインなしで閲覧可
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/genre/{slug}', 'GenreController@show')->name('genre.show');
+Route::get('/store/{slug}', 'StoreController@show')->name('store.show');
 
 //voyager
 Route::group(['prefix' => 'admin'], function () {
