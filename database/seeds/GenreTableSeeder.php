@@ -16,15 +16,18 @@ class GenreTableSeeder extends Seeder
         DB::table('genres')->insert([
             0 => [
                 'id' => 1,
-                'name' => 'メンズ'
+                'name' => 'メンズ',
+                'slug' => 'mens'
             ],
             1 => [
                 'id' => 2,
-                'name' => 'レディース'
+                'name' => 'レディース',
+                'slug' => 'ledies'
             ],
             2 => [
                 'id' => 3,
                 'name' => 'キッズ',
+                'slug' => 'kids'
             ]
         ]);
     }

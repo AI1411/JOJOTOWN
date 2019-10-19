@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf4fc34-b522-47de-aa1d-2bbcacae2ea1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/genres/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/358dbc4f-c2f0-400a-9504-ae27cfc4eeb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/358dbc4f-c2f0-400a-9504-ae27cfc4eeb3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_19_133907_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_19_133907_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GenreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GenreController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_19_142313_create_genres_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_19_142313_create_genres_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/GenreTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/GenreTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
         <item name="jojotown@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="jojotown: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="products: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="genres: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -184,6 +183,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/sass" />
       <recent name="$PROJECT_DIR$/storage/app/public/product_image" />
       <recent name="$PROJECT_DIR$/storage/app/public" />
     </key>
@@ -248,7 +249,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571406593609</updated>
       <workItem from="1571406639210" duration="7570000" />
-      <workItem from="1571454261103" duration="22707000" />
+      <workItem from="1571454261103" duration="27158000" />
     </task>
     <servers />
   </component>

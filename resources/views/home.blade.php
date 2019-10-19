@@ -16,7 +16,6 @@
     </section>
     <section class="new-product t100 home">
         <div class="container">
-
             <ul class="row text-center list-unstyled">
                 @for($i = 0;$i < 3;$i++)
                     <div class="section-title b50">
@@ -37,8 +36,14 @@
                             </li>
                         @endif
                     @endforeach
+                    <a href="{{ route('genre.show', $genres[$i]->slug) }}">
+                        <button class="btn btn-block mb-5">
+                            ジャンルの全ての商品を見る
+                        </button>
+                    </a>
                 @endfor
             </ul>
+
         </div>
     </section>
 @endsection
