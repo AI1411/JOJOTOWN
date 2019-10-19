@@ -18,13 +18,13 @@
                     <input type="password" name="password" id="password" value="" class="form-control" placeholder="xxxxx">
                 </div>
                 <div class="row">
-                    <button class="btn btn-default btn-block" type="submit">Login now</button>
+                    <button class="btn btn-default btn-block" type="submit">ログイン</button>
                 </div>
             </form>
             <div class="row">
                 <hr>
-                <a href="{{route('password.request')}}">I forgot my password</a><br>
-                <a href="{{route('register')}}" class="text-center">No account? Register here.</a>
+                <a href="{{route('password.request')}}">パスワードを忘れた方</a><br>
+                <a href="{{route('register')}}" class="text-center">新規登録へ</a>
             </div>
         </div>
     </section>

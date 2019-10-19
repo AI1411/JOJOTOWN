@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -23,3 +25,8 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::namespace('Auth')->group(function () {
+    Route::get('logout', 'LoginController@logout');
+});
+
+Route::get('accounts', 'AccountsController@index')->name('accounts');

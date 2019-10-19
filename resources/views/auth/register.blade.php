@@ -8,7 +8,7 @@
                     <div class="card-header">新規登録</div>
                     <div class="card-body">
                         <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
-                            {{ csrf_field() }}
+                            @csrf
 
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">名前</label>
