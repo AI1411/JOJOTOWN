@@ -30,7 +30,8 @@
                                              alt="{{ $product->name }}"
                                              width="250px" height="400px">
                                         <small><i class="fas fa-yen-sign"></i>: {{ $product->price }}</small>
-                                        <button class="btn btn-block">カートに入れる</button>
+                                        <a href="{{ route('store.show', $product->store->slug) }}"><button class="btn btn-block">出品している店舗へ</button></a>
+                                        <a href=""><button class="btn btn-block">カートに入れる</button></a>
                                     </div>
                                 </div>
                             </li>
