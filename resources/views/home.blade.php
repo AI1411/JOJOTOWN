@@ -1,23 +1,92 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+    <section id="hero" class="hero-section top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="hero-content">
+                        <h1 class="hero-title" style="color: #227dc7">{{config('app.name')}} Holiday <br> Collection</h1>
+                    </div>
                 </div>
+                <div class="col-md-4"></div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+    <section class="new-product t100 home">
+        <div class="container">
+            <div class="section-title b50">
+{{--                <h2>{{ $cat1->name }}</h2>--}}
+                <h2>tst</h2>
+            </div>
+{{--            @include('front.products.product-list', ['products' => $cat1->products->where('status', 1)])--}}
+            <ul class="row text-center list-unstyled">
+                @foreach($products as $product)
+                    <li class="col-md-3 col-sm-6 col-xs-12 product-list">
+                        <div class="single-product">
+                            <div class="product">
+                                <div class="product-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <ul class="list-unstyled list-group">
+{{--                                                <li>--}}
+{{--                                                    <form action="{{ route('cart.store') }}" class="form-inline" method="post">--}}
+{{--                                                        {{ csrf_field() }}--}}
+{{--                                                        <input type="hidden" name="quantity" value="1" />--}}
+{{--                                                        <input type="hidden" name="product" value="{{ $product->id }}">--}}
+{{--                                                        <button id="add-to-cart-btn" type="submit" class="btn btn-warning" data-toggle="modal" data-target="#cart-modal"> <i class="fa fa-cart-plus"></i> Add to cart</button>--}}
+{{--                                                    </form>--}}
+{{--                                                </li>--}}
+                                                <li>  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal_{{ $product->id }}"> <i class="fa fa-eye"></i> Quick View</button>
+{{--                                                <li>  <a class="btn btn-default product-btn" href="{{ route('front.get.product', str_slug($product->slug)) }}"> <i class="fa fa-link"></i> Go to product</a> </li>--}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if(isset($product->cover_image))
+                                    <img src="{{ asset("storage/$product->cover_image") }}" alt="{{ $product->name }}" width="250px" height="400px">
+                                @else
+                                    <img src="https://placehold.it/263x330" alt="{{ $product->name }}" class="img-bordered img-responsive" />
+                                @endif
+                            </div>
+
+{{--                            <div class="product-text">--}}
+{{--                                <h4>{{ $product->name }}</h4>--}}
+{{--                                <p>--}}
+{{--                                {{ config('cart.currency') }}--}}
+{{--                                @if(!is_null($product->attributes->where('default', 1)->first()))--}}
+{{--                                    @if(!is_null($product->attributes->where('default', 1)->first()->sale_price))--}}
+{{--                                        {{ number_format($product->attributes->where('default', 1)->first()->sale_price, 2) }}--}}
+{{--                                        <p class="text text-danger">Sale!</p>--}}
+{{--                                        @else--}}
+{{--                                        {{ number_format($product->attributes->where('default', 1)->first()->price, 2) }}--}}
+{{--                                        @endif--}}
+{{--                                        @else--}}
+{{--                                        {{ number_format($product->price, 2) }}--}}
+{{--                                        @endif--}}
+{{--                                        </p>--}}
+{{--                            </div>--}}
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal_{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+{{--                                        @include('layouts.front.product')--}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                @endforeach
+                @if($products instanceof \Illuminate\Contracts\Pagination\LengthAwarePaginator)
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pull-left">{{ $products->links() }}</div>
+                        </div>
+                    </div>
+                @endif
+            </ul>
+            <div id="browse-all-btn"> <a class="btn btn-default browse-all-btn" href="" role="button">browse all items</a></div>
+        </div>
+    </section>
+
 @endsection

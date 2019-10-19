@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         factory(Store::class, 50)->create();
         factory(Product::class, 100)->create();
         factory(Review::class, 100)->create();
+        $this->call(StatusTableSeeder::class);
     }
 }

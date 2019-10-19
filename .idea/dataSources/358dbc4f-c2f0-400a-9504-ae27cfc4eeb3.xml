@@ -2440,9 +2440,9 @@ role_id</ColNames>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="551" parent="336" name="status">
+    <column id="551" parent="336" name="status_id">
       <Position>7</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
@@ -2468,35 +2468,40 @@ role_id</ColNames>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="556" parent="336" name="created_at">
+    <column id="556" parent="336" name="last_login_at">
       <Position>12</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="557" parent="336" name="updated_at">
+    <column id="557" parent="336" name="created_at">
       <Position>13</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="558" parent="336" name="users_email_unique">
+    <column id="558" parent="336" name="updated_at">
+      <Position>14</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="559" parent="336" name="users_email_unique">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="559" parent="336" name="users_role_id_foreign">
+    <index id="560" parent="336" name="users_role_id_foreign">
       <ColNames>role_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="560" parent="336" name="PRIMARY">
+    <key id="561" parent="336" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="561" parent="336" name="users_email_unique">
+    <key id="562" parent="336" name="users_email_unique">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
     </key>
-    <foreign-key id="562" parent="336" name="users_role_id_foreign">
+    <foreign-key id="563" parent="336" name="users_role_id_foreign">
       <ColNames>role_id</ColNames>
       <RefTableName>roles</RefTableName>
       <RefColNames>id</RefColNames>

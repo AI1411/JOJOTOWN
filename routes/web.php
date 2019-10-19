@@ -12,21 +12,22 @@
 */
 
 use Illuminate\Support\Facades\Route;
+//ログインなしで閲覧可
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
+//voyager
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+Route::group(['middleware' => ['auth']], function (){
+    Route::get('accounts', 'AccountsController@index')->name('accounts');
+});
+
 Route::namespace('Auth')->group(function () {
     Route::get('logout', 'LoginController@logout');
 });
 
-Route::get('accounts', 'AccountsController@index')->name('accounts');
+
