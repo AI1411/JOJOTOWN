@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf4fc34-b522-47de-aa1d-2bbcacae2ea1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Accounts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,34 +185,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.AuthCheckFeatureTest.新規登録画面が表示されるか">
-    <configuration name="AuthCheckFeatureTest.パウワードリセットページが表示されるか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="パウワードリセットページが表示されるか" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.AuthCheckFeatureTest">
+    <configuration name="AuthCheckFeatureTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthCheckFeatureTest.登録時のバリデーションメッセージが表示されるか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="登録時のバリデーションメッセージが表示されるか" scope="Method" />
+    <configuration name="AuthCheckFeatureTest.ログインフォームがちゃんと表示されているかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="ログインフォームがちゃんと表示されているかどうか" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthCheckFeatureTest.新規登録できるかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="新規登録できるかどうか" scope="Method" />
+    <configuration name="AuthCheckFeatureTest.ログイン後のアカウントページへのリダイレクト" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="ログイン後のアカウントページへのリダイレクト" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="AuthCheckFeatureTest.新規登録画面が表示されるか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="新規登録画面が表示されるか" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthCheckFeatureTest.it_can_show_the_reset_password_page" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="it_can_show_the_reset_password_page" scope="Method" />
+    <configuration name="AuthCheckFeatureTest.it_shows_the_password_reset_page" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="it_shows_the_password_reset_page" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AuthCheckFeatureTest" />
+        <item itemvalue="PHPUnit.AuthCheckFeatureTest.ログイン後のアカウントページへのリダイレクト" />
+        <item itemvalue="PHPUnit.AuthCheckFeatureTest.ログインフォームがちゃんと表示されているかどうか" />
+        <item itemvalue="PHPUnit.AuthCheckFeatureTest.it_shows_the_password_reset_page" />
         <item itemvalue="PHPUnit.AuthCheckFeatureTest.新規登録画面が表示されるか" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest.新規登録できるかどうか" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest.登録時のバリデーションメッセージが表示されるか" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest.パウワードリセットページが表示されるか" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest.it_can_show_the_reset_password_page" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +227,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571406593609</updated>
       <workItem from="1571406639210" duration="7570000" />
-      <workItem from="1571454261103" duration="4388000" />
+      <workItem from="1571454261103" duration="8346000" />
     </task>
     <servers />
   </component>
