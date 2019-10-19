@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/genre/{slug}', 'GenreController@show')->name('genre.show');
 Route::get('/store/{slug}', 'StoreController@show')->name('store.show');
+Route::get('/cart', 'CartController@show')->name('cart');
 
 //voyager
 Route::group(['prefix' => 'admin'], function () {
