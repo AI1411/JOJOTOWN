@@ -13,7 +13,8 @@ $factory->define(Product::class, function (Faker $faker) {
         'name' => $word,
         'slug' => Str::slug($word),
         'description' => $sentence,
-        'price' => rand(100, 1000),
+        'price' => random_int(100, 10000),
+        'genre_id' => rand(1, 3),
         'status' => 1,
         'cover_image' => $faker->randomElement([
             'alexi-romano-CCx6Fz_CmOI-unsplash.jpg',

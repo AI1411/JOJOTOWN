@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ env('GOOGLE_ANALYTICS') }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', '{{ env('GOOGLE_ANALYTICS') }}');
@@ -16,7 +20,8 @@
     <title>{{ config('app.name') }}</title>
     <title>Laracom - Laravel FREE E-Commerce Software</title>
     <meta name="description" content="Modern open-source e-commerce framework for free">
-    <meta name="tags" content="modern, opensource, open-source, e-commerce, framework, free, laravel, php, php7, symfony, shop, shopping, responsive, fast, software, blade, cart, test driven, adminlte, storefront">
+    <meta name="tags"
+          content="modern, opensource, open-source, e-commerce, framework, free, laravel, php, php7, symfony, shop, shopping, responsive, fast, software, blade, cart, test driven, adminlte, storefront">
     <meta name="author" content="Jeff Simons Decena">
     <link href="{{ asset('css/style.min.css') }}" rel="stylesheet">
 
@@ -35,10 +40,12 @@
     <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('favicons/apple-icon-144x144.png')}}">
     <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('favicons/apple-icon-152x152.png')}}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicons/apple-icon-180x180.png')}}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('favicons/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('favicons/android-icon-192x192.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicons/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicons/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicons/favicon-16x16.png')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="manifest" href="{{ asset('favicons/manifest.json')}}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset('favicons/ms-icon-144x144.png')}}">
@@ -63,7 +70,8 @@
             <div class="pull-right">
                 <ul class="nav navbar-nav navbar-right">
                     @if(auth()->check())
-                        <li><a href="{{ route('accounts', ['tab' => 'profile']) }}"><i class="fa fa-home"></i> My Account</a></li>
+                        <li><a href="{{ route('accounts', ['tab' => 'profile']) }}"><i class="fa fa-home"></i> My
+                                Account</a></li>
                         <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out"></i> Logout</a></li>
                     @else
                         <li><a href="{{ route('login') }}"> <i class="fa fa-lock"></i> Login</a></li>
@@ -72,7 +80,7 @@
                     <li id="cart" class="menubar-cart">
                         <a href="" title="View Cart" class="awemenu-icon menu-shopping-cart">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-{{--                            <span class="cart-number">{{ $cartCount }}</span>--}}
+                            {{--                            <span class="cart-number">{{ $cartCount }}</span>--}}
                         </a>
                     </li>
                 </ul>
@@ -84,7 +92,8 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header col-md-2">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -93,7 +102,7 @@
                     <a class="navbar-brand" href="{{ route('home') }}">{{ config('app.name') }}</a>
                 </div>
                 <div class="col-md-10">
-{{--                    @include('layouts.front.header-cart')--}}
+                    {{--                    @include('layouts.front.header-cart')--}}
                 </div>
             </div>
         </nav>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Genre;
 use App\Product;
 use App\Review;
 use App\Store;
@@ -20,5 +21,6 @@ class DatabaseSeeder extends Seeder
         factory(Product::class, 100)->create();
         factory(Review::class, 100)->create();
         $this->call(StatusTableSeeder::class);
+        $this->call(GenreTableSeeder::class);
     }
 }

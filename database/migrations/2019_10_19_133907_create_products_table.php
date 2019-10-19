@@ -19,7 +19,8 @@ class CreateProductsTable extends Migration
             $table->string('slug');
             $table->text('description');
             $table->string('cover_image');
-            $table->decimal('price');
+            $table->float('price');
+            $table->unsignedBigInteger('genre_id')->nullable();
             $table->integer('status')->default(1);
             $table->timestamps();
         });

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Genre;
 use App\Product;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $products = Product::paginate(20);
-        return view('home', compact('products'));
+        $genres = Genre::all();
+        return view('home', compact('genres'));
     }
 }
