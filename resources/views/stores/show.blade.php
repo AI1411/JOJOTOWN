@@ -12,6 +12,7 @@
                                 <img src="{{ asset("storage/product_image/$product->cover_image") }}"
                                      alt="{{ $product->name }}"
                                      width="250px" height="400px">
+                                <large>{{ $product->name }}</large><br>
                                 <small><i class="fas fa-yen-sign"></i>: {{ $product->price }}</small>
                                 <button class="btn btn-block">カートに入れる</button>
                             </div>

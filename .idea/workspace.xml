@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="caf4fc34-b522-47de-aa1d-2bbcacae2ea1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +42,13 @@
         <item name="jojotown@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="jojotown: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jojotown@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jojotown: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="stores: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -194,13 +199,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.AuthCheckFeatureTest.新規登録できるかどうか">
+  <component name="RunManager" selected="PHPUnit.ProductTest.製品ページで適切な表示がされているかどうか">
     <configuration name="AuthCheckFeatureTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthCheckFeatureTest.ログインフォームがちゃんと表示されているかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="ログインフォームがちゃんと表示されているかどうか" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="AuthCheckFeatureTest.ログイン後のアカウントページへのリダイレクト" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -211,17 +212,21 @@
       <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="新規登録できるかどうか" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="AuthCheckFeatureTest.it_shows_the_password_reset_page" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="it_shows_the_password_reset_page" scope="Method" />
+    <configuration name="ProductTest.製品が適切に表示されているかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ProductTest" file="$PROJECT_DIR$/tests/Feature/ProductTest.php" method="製品が適切に表示されているかどうか" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductTest.製品ページで適切な表示がされているかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ProductTest" file="$PROJECT_DIR$/tests/Feature/ProductTest.php" method="製品ページで適切な表示がされているかどうか" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ProductTest.製品ページで適切な表示がされているかどうか" />
+        <item itemvalue="PHPUnit.ProductTest.製品が適切に表示されているかどうか" />
+        <item itemvalue="PHPUnit.AuthCheckFeatureTest.ログイン後のアカウントページへのリダイレクト" />
         <item itemvalue="PHPUnit.AuthCheckFeatureTest.新規登録できるかどうか" />
         <item itemvalue="PHPUnit.AuthCheckFeatureTest" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest.ログイン後のアカウントページへのリダイレクト" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest.ログインフォームがちゃんと表示されているかどうか" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest.it_shows_the_password_reset_page" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +241,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571406593609</updated>
       <workItem from="1571406639210" duration="7570000" />
-      <workItem from="1571454261103" duration="32625000" />
+      <workItem from="1571454261103" duration="34297000" />
     </task>
     <servers />
   </component>
