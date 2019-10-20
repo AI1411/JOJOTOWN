@@ -3,9 +3,10 @@
 @section('content')
     <hr>
     <!-- Main content -->
+{{--    <div class="col-md-12">@include('layouts.messages')</div>--}}
     <section class="container content">
-{{--        <div class="col-md-12">@include('layouts.errors-and-messages')</div>--}}
         <div class="col-md-4 col-md-offset-4">
+            @include('layouts.messages')
             <h2>Login to your account</h2>
             <form action="{{ route('login') }}" method="post" class="form-horizontal">
                 {{ csrf_field() }}

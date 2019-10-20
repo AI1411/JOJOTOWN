@@ -26,12 +26,18 @@
                             <li class="col-md-3 col-sm-6 col-xs-12 product-list">
                                 <div class="single-product">
                                     <div class="product">
-                                        <img src="{{ asset("storage/product_image/$product->cover_image") }}"
-                                             alt="{{ $product->name }}"
-                                             width="250px" height="400px">
+                                        <a href="{{ route('product.show', $product->slug) }}">
+                                            <img src="{{ asset("storage/product_image/$product->cover_image") }}"
+                                                 alt="{{ $product->name }}"
+                                                 width="250px" height="400px">
+                                        </a>
                                         <small><i class="fas fa-yen-sign"></i>: {{ $product->price }}</small>
-                                        <a href="{{ route('store.show', $product->store->slug) }}"><button class="btn btn-block">出品している店舗へ</button></a>
-                                        <a href=""><button class="btn btn-block">カートに入れる</button></a>
+                                        <a href="{{ route('store.show', $product->store->slug) }}">
+                                            <button class="btn btn-block">出品している店舗へ</button>
+                                        </a>
+                                        <a href="">
+                                            <button class="btn btn-block">カートに入れる</button>
+                                        </a>
                                     </div>
                                 </div>
                             </li>

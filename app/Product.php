@@ -25,4 +25,9 @@ class Product extends Model
     {
         return $this->belongsTo(Genre::class);
     }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

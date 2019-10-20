@@ -14,7 +14,8 @@
                                 <label for="name" class="col-md-4 control-label">名前</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" autofocus>
+                                    <input id="name" type="text" class="form-control" name="name"
+                                           value="{{ old('name') }}" autofocus>
 
                                     @if ($errors->has('name'))
                                         <span class="help-block">
@@ -28,7 +29,8 @@
                                 <label for="email" class="col-md-4 control-label">メールアドレス</label>
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                    <input id="email" type="email" class="form-control" name="email"
+                                           value="{{ old('email') }}">
 
                                     @if ($errors->has('email'))
                                         <span class="help-block">
@@ -56,7 +58,21 @@
                                 <label for="password-confirm" class="col-md-4 control-label">パスワード確認</label>
 
                                 <div class="col-md-6">
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
+                                    <input id="password-confirm" type="password" class="form-control"
+                                           name="password_confirmation">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">目的</label>
+                                <div class="col-md-6">
+                                    <label for="">店舗運営</label>
+                                    <input type="radio" name="status_id" value="5">
+                                    @if ($errors->has('status_id'))
+                                        <span class="help-block">
+                                        <strong style="color: #a94442">{{ $errors->first('status_id') }}</strong>
+                                    </span>
+                                    @endif
                                 </div>
                             </div>
 

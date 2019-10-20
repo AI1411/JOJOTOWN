@@ -29,6 +29,10 @@ class StatusTableSeeder extends Seeder
             3 => [
                 'id' => 4,
                 'name' => 'プラチナ会員'
+            ],
+            4 => [
+                'id' => 5,
+                'name' => '店舗管理者'
             ]
         ]);
     }

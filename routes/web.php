@@ -15,8 +15,9 @@ use Illuminate\Support\Facades\Route;
 //ログインなしで閲覧可
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/genre/{slug}', 'GenreController@show')->name('genre.show');
-Route::get('/store/{slug}', 'StoreController@show')->name('store.show');
+Route::get('/stores/{slug}', 'StoreController@show')->name('store.show');
 Route::get('/cart', 'CartController@show')->name('cart');
+Route::get('product/{slug}', 'ProductController@show')->name('product.show');
 
 //voyager
 Route::group(['prefix' => 'admin'], function () {
@@ -27,6 +28,8 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 Route::group(['middleware' => ['auth']], function (){
     Route::get('accounts', 'AccountsController@index')->name('accounts');
+    Route::get('/store/create', 'StoreController@create')->name('store.create');
+    Route::post('/store', 'StoreController@store')->name('store.store');
 });
 
 Route::namespace('Auth')->group(function () {
