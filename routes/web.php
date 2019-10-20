@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 //ログインなしで閲覧可
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/genre/{slug}', 'GenreController@show')->name('genre.show');
+
+Route::get('stores', 'StoreController@index')->name('store.index');
 Route::get('/stores/{slug}', 'StoreController@show')->name('store.show');
+
 Route::get('/cart', 'CartController@show')->name('cart');
 Route::get('product/{slug}', 'ProductController@show')->name('product.show');
 

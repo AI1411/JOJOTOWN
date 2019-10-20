@@ -10,6 +10,12 @@ use Illuminate\Support\Str;
 
 class StoreController extends Controller
 {
+
+    public function index()
+    {
+        $stores = Store::all();
+        return view('stores.index', compact('stores'));
+    }
     public function show($slug)
     {
         $store = Store::where('slug', $slug)->first();

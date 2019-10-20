@@ -20,7 +20,15 @@
                     {{ $user->status->name }}
                 </h3>
                 <a href="{{ route('home') }}" class="text-center">
-                    <button class="btn btn-block">戻る</button>
+                    <button class="btn btn-block btn-primary">戻る</button>
+                </a>
+                <hr>
+                <a href="{{ route('home') }}" class="text-center">
+                    <button class="btn btn-block btn-info">会員ステータスを変更する</button>
+                </a>
+                <hr>
+                <a href="{{ route('store.create') }}" class="text-center">
+                    <button class="btn btn-block btn-success">店舗作成登録をする</button>
                 </a>
 
             </div>

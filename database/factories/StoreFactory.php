@@ -12,5 +12,13 @@ $factory->define(Store::class, function (Faker $faker) {
     return [
         'name' => $word,
         'slug' => Str::slug($word),
+        'logo' => $faker->randomElement([
+            'fashion.jpeg',
+            'gap.png',
+            'gu.png',
+            'stussy.jpeg',
+            'uniqlo.png',
+            'gorilla.png'
+        ])
     ];
 });
