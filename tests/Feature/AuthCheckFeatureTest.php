@@ -10,6 +10,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AuthCheckFeatureTest extends TestCase
 {
+    use RefreshDatabase;
+
     /** @test */
     public function パウワードリセットページが正常なレスポンスを返すか()
     {
@@ -31,13 +33,13 @@ class AuthCheckFeatureTest extends TestCase
         $data = [
             'name' => $this->faker->name,
             'email' => $this->faker->email,
-            'password' => 'secret',
-            'password_confirmation' => 'secret'
+            'password' => 'password',
+            'password_confirmation' => 'password'
         ];
 
         $this->post(route('register'), $data)
             ->assertStatus(302)
-            ->assertRedirect(route('accounts'));
+            ->assertRedirect(route('home'));
     }
 
     /** @test */
@@ -70,11 +72,11 @@ class AuthCheckFeatureTest extends TestCase
 
         $data = [
           'email' => $user->email,
-          'password' => 'secret'
+          'password' => 'password'
         ];
 
         $this->post(route('login'), $data)
         ->assertStatus(302)
-        ->assertRedirect(route('accounts'));
+        ->assertRedirect(route('home'));
     }
 }
