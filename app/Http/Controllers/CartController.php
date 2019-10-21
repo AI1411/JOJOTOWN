@@ -12,8 +12,14 @@ class CartController extends Controller
     public function show()
     {
         $carts = Cart::all();
+        $price = [];
+        foreach ($carts as $cart) {
+            array_push($price, $cart->price);
+        }
+        $totalPrice = array_sum($price);
 
-        return view('carts.show', compact('carts'));
+        dump($totalPrice);
+        return view('carts.show', compact('carts', 'totalPrice'));
     }
 
     public function store(Request $request)

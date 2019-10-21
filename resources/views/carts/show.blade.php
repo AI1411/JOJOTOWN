@@ -38,7 +38,7 @@
                                 <div class="col-lg-2 col-md-2"><b>個数</b></div>
                                 <div class="col-lg-1 col-md-1"><b>削除</b></div>
                                 <div class="col-lg-2 col-md-2"><b>値段</b></div>
-                                <div class="col-lg-2 col-md-2"><b>合計</b></div>
+{{--                                <div class="col-lg-2 col-md-2"><b>合計</b></div>--}}
                             </div>
                         </div>
                     </div>
@@ -75,14 +75,57 @@
                                     <div class="col-lg-2 col-md-2">
                                         {{ $cartItem->price }}
                                     </div>
-                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                                        1
-                                    </div>
+{{--                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">--}}
+{{--                                        1--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                     @endforeach
                     <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 content">
+                    <table class="table table-striped">
+                        <tfoot>
+{{--                        <tr>--}}
+{{--                            <td class="bg-warning">Subtotal</td>--}}
+{{--                            <td class="bg-warning"></td>--}}
+{{--                            <td class="bg-warning"></td>--}}
+{{--                            <td class="bg-warning"></td>--}}
+{{--                            <td class="bg-warning">{{config('cart.currency')}} {{ number_format($subtotal, 2, '.', ',') }}</td>--}}
+{{--                        </tr>--}}
+{{--                        <tr>--}}
+{{--                            <td class="bg-warning">Tax</td>--}}
+{{--                            <td class="bg-warning"></td>--}}
+{{--                            <td class="bg-warning"></td>--}}
+{{--                            <td class="bg-warning"></td>--}}
+{{--                            <td class="bg-warning">{{config('cart.currency')}} {{ number_format($tax, 2) }}</td>--}}
+{{--                        </tr>--}}
+                        <tr>
+                            <td class="bg-success">Total</td>
+                            <td class="bg-success"></td>
+                            <td class="bg-success"></td>
+                            <td class="bg-success"></td>
+                            <td class="bg-success"></td>
+                            <td class="bg-success"></td>
+                            <td class="bg-success">{{ $carts->count() }}</td>
+                            <td class="bg-success"></td>
+                            <td class="bg-success">{{ $totalPrice }}</td>
+{{--                            <td class="bg-success">{{config('cart.currency')}} {{ number_format($total, 2, '.', ',') }}</td>--}}
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="btn-group pull-right">
+{{--                                <a href="{{ route('home') }}" class="btn btn-default">Continue shopping</a>--}}
+{{--                                <a href="{{ route('checkout.index') }}" class="btn btn-primary">Go to checkout</a>--}}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         @else
