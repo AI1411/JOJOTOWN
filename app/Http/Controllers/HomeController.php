@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cart;
 use App\Genre;
 use App\Product;
 use App\Store;
@@ -27,6 +28,7 @@ class HomeController extends Controller
     public function index(Product $product)
     {
         $genres = Genre::all();
+
         return view('home', compact('genres', 'store'));
     }
 }

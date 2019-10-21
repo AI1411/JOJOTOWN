@@ -3,7 +3,12 @@
 @section('content')
     <section class="new-product t100 home">
         <div class="container">
+            <a href="{{ route('store.index') }}">
+                <p class="btn btn-block">店舗一覧</p>
+            </a>
+            <hr>
             <h2 class="mb-3 text-center">{{ $store->name }}の商品ページ</h2>
+
             <ul class="row text-center list-unstyled">
                 @foreach($products as $product)
                     <li class="col-md-3 col-sm-6 col-xs-12 product-list">

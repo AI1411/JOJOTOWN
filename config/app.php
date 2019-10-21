@@ -1,5 +1,7 @@
 <?php
 
+use App\Providers\GlobalTemplateServiceProvider;
+
 return [
 
     /*
@@ -175,8 +177,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class
-
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
+        GlobalTemplateServiceProvider::class,
     ],
 
     /*
