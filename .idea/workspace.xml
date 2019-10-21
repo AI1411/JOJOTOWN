@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf4fc34-b522-47de-aa1d-2bbcacae2ea1" name="Default Changelist" comment="店舗一覧ページへのリンクを追加">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/carts/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/carts/thanks.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/358dbc4f-c2f0-400a-9504-ae27cfc4eeb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/358dbc4f-c2f0-400a-9504-ae27cfc4eeb3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/GlobalTemplateServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/GlobalTemplateServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_19_140024_create_carts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_19_140024_create_carts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/carts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/carts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +53,6 @@
         <item name="jojotown@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="jojotown: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jojotown@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="jojotown: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="carts: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -251,7 +252,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571406593609</updated>
       <workItem from="1571406639210" duration="7570000" />
-      <workItem from="1571454261103" duration="65024000" />
+      <workItem from="1571454261103" duration="71827000" />
     </task>
     <servers />
   </component>

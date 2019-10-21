@@ -21,6 +21,9 @@ Route::get('/stores/{slug}', 'StoreController@show')->name('store.show');
 
 Route::get('/cart', 'CartController@show')->name('cart');
 Route::post('cart', 'CartController@store')->name('cart.store');
+Route::post('cart/confirm', 'CartController@confirm')->name('cart.confirm');
+Route::post('cart/thanks', 'CartController@thanks')->name('cart.thanks');
+
 Route::get('product/{slug}', 'ProductController@show')->name('product.show');
 
 //voyager

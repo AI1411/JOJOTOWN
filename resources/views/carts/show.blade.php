@@ -20,7 +20,7 @@
                 <h3><i class="fa fa-cart-plus"></i> Shopping Cart</h3>
             </div>
         </div>
-        @if(!empty($carts))
+        @if($carts->count() > 0)
             <div class="row">
                 <div class="col-md-12">
                     <!-- <div class="row header hidden-xs hidden-sm"> -->
@@ -70,7 +70,9 @@
                                         1
                                     </div>
                                     <div class="col-lg-1 col-md-1">
-                                        1
+                                        <form action="">
+                                            <button class="btn btn-danger">削除</button>
+                                        </form>
                                     </div>
                                     <div class="col-lg-2 col-md-2">
                                         {{ $cartItem->price }}
@@ -94,9 +96,7 @@
                             <td class="bg-success"></td>
                             <td class="bg-success"></td>
                             <td class="bg-success"></td>
-                            <td class="bg-success"></td>
-                            <td class="bg-success"></td>
-                            <td class="bg-success">{{ $carts->count() }}</td>
+                            <td class="bg-success" style="margin-left: 10px">{{ $carts->count() }}</td>
                             <td class="bg-success"></td>
                             <td class="bg-success">{{ $totalPrice }}</td>
                         </tr>
@@ -107,8 +107,11 @@
                         <div class="col-md-12">
                             <div class="btn-group pull-right">
                                 <a href="{{ route('home') }}" class="btn btn-default">買い物を続ける</a>
-{{--                                <a href="{{ route('checkout.index') }}" class="btn btn-primary">Go to checkout</a>--}}
                             </div>
+                            <form action="{{ route('cart.confirm') }}" method="post">
+                                @csrf
+                                <button class="btn btn-success" type="submit">レジに進む</button>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Cart;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
 
 class GlobalTemplateServiceProvider extends ServiceProvider
@@ -26,6 +27,10 @@ class GlobalTemplateServiceProvider extends ServiceProvider
     {
         view()->composer(['layouts.app'], function ($view) {
             $view->with('cartCount', Cart::all()->count());
+        });
+
+        view()->composer(['layouts.app'], function ($view) {
+            $view->with('user', Auth::user());
         });
     }
 }

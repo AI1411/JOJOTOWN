@@ -35,11 +35,6 @@
                                         <a href="{{ route('store.show', $product->store->slug) }}">
                                             <button class="btn btn-block">出品している店舗へ</button>
                                         </a>
-                                        <form action="{{ route('cart.store',$product->slug) }}" method="post">
-                                            @csrf
-                                            <input type="hidden" value="{{ $product->slug }}">
-                                            <button class="btn btn-block">カートに入れる</button>
-                                        </form>
                                     </div>
                                 </div>
                             </li>
