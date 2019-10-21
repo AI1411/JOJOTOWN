@@ -89,20 +89,6 @@
                 <div class="col-md-12 content">
                     <table class="table table-striped">
                         <tfoot>
-{{--                        <tr>--}}
-{{--                            <td class="bg-warning">Subtotal</td>--}}
-{{--                            <td class="bg-warning"></td>--}}
-{{--                            <td class="bg-warning"></td>--}}
-{{--                            <td class="bg-warning"></td>--}}
-{{--                            <td class="bg-warning">{{config('cart.currency')}} {{ number_format($subtotal, 2, '.', ',') }}</td>--}}
-{{--                        </tr>--}}
-{{--                        <tr>--}}
-{{--                            <td class="bg-warning">Tax</td>--}}
-{{--                            <td class="bg-warning"></td>--}}
-{{--                            <td class="bg-warning"></td>--}}
-{{--                            <td class="bg-warning"></td>--}}
-{{--                            <td class="bg-warning">{{config('cart.currency')}} {{ number_format($tax, 2) }}</td>--}}
-{{--                        </tr>--}}
                         <tr>
                             <td class="bg-success">Total</td>
                             <td class="bg-success"></td>
@@ -113,7 +99,6 @@
                             <td class="bg-success">{{ $carts->count() }}</td>
                             <td class="bg-success"></td>
                             <td class="bg-success">{{ $totalPrice }}</td>
-{{--                            <td class="bg-success">{{config('cart.currency')}} {{ number_format($total, 2, '.', ',') }}</td>--}}
                         </tr>
                         </tfoot>
                     </table>
@@ -121,7 +106,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="btn-group pull-right">
-{{--                                <a href="{{ route('home') }}" class="btn btn-default">Continue shopping</a>--}}
+                                <a href="{{ route('home') }}" class="btn btn-default">買い物を続ける</a>
 {{--                                <a href="{{ route('checkout.index') }}" class="btn btn-primary">Go to checkout</a>--}}
                             </div>
                         </div>

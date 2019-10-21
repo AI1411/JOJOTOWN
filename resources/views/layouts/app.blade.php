@@ -71,12 +71,11 @@
             <div class="pull-right">
                 <ul class="nav navbar-nav navbar-right">
                     @if(auth()->check())
-                        <li><a href="{{ route('accounts', ['tab' => 'profile']) }}"><i class="fa fa-home"></i> My
-                                Account</a></li>
-                        <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out"></i> Logout</a></li>
+                        <li><a href="{{ route('accounts') }}"><i class="fa fa-home"></i> マイページ<span class="cart-number">3</span></a></li>
+                        <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out"></i> ログアウト</a></li>
                     @else
-                        <li><a href="{{ route('login') }}"> <i class="fa fa-lock"></i> Login</a></li>
-                        <li><a href="{{ route('register') }}"> <i class="fa fa-sign-in"></i> Register</a></li>
+                        <li><a href="{{ route('login') }}"> <i class="fa fa-lock"></i> ログイン</a></li>
+                        <li><a href="{{ route('register') }}"> <i class="fa fa-sign-in"></i> 新規登録</a></li>
                     @endif
                     <li id="cart" class="menubar-cart">
                         <a href="{{ route('cart') }}" title="View Cart" class="awemenu-icon menu-shopping-cart">
@@ -111,7 +110,7 @@
 </section>
 @yield('content')
 
-{{--@include('layouts.front.footer')--}}
+@include('layouts.footer')
 
 <script src="{{ asset('js/front.min.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
