@@ -13,6 +13,7 @@
                                      alt="{{ $product->name }}"
                                      width="250px" height="400px">
                                 <small><i class="fas fa-yen-sign"></i>: {{ $product->price }}</small>
+                                <a href="{{ route('product.show', $product->slug) }}" class="btn btn-block">商品ページへ</a>
                                 <button class="btn btn-block">カートに入れる</button>
                             </div>
                         </div>

@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         factory(Store::class, 10)->create();
         factory(Product::class, 200)->create();
         factory(Review::class, 100)->create();
+//        factory(Genre::class, 3)->create();
         $this->call(StatusTableSeeder::class);
         $this->call(GenreTableSeeder::class);
     }

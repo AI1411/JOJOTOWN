@@ -35,9 +35,11 @@
                                         <a href="{{ route('store.show', $product->store->slug) }}">
                                             <button class="btn btn-block">出品している店舗へ</button>
                                         </a>
-                                        <a href="">
+                                        <form action="{{ route('cart.store', $product->slug) }}" method="post">
+                                            @csrf
+{{--                                            <input type="hidden" value="{{ $product->slug }}">--}}
                                             <button class="btn btn-block">カートに入れる</button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </li>

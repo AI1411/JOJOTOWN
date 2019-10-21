@@ -20,6 +20,7 @@ Route::get('stores', 'StoreController@index')->name('store.index');
 Route::get('/stores/{slug}', 'StoreController@show')->name('store.show');
 
 Route::get('/cart', 'CartController@show')->name('cart');
+Route::post('cart', 'CartController@store')->name('cart.store');
 Route::get('product/{slug}', 'ProductController@show')->name('product.show');
 
 //voyager

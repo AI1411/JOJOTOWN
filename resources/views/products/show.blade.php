@@ -31,8 +31,12 @@
                     <div class="row">
                         <div class="col-md-12">
                             @include('layouts.messages')
-                            <form action="" method="post">
+                            <form action="{{ route('cart.store') }}" method="post">
                                 @csrf
+{{--                                <input type="hidden" name="product_id" value="{{ $product->id }}">--}}
+                                <input type="hidden" name="name" value="{{ $product->name }}">
+                                <input type="hidden" name="cover_image" value="{{ $product->cover_image }}">
+                                <input type="hidden" name="price" value="{{ $product->price }}">
                                 <button type="submit" class="btn btn-block btn-primary">カートに追加する</button>
                             </form>
                         </div>

@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf4fc34-b522-47de-aa1d-2bbcacae2ea1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/stores/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/GenrePageTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/358dbc4f-c2f0-400a-9504-ae27cfc4eeb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/358dbc4f-c2f0-400a-9504-ae27cfc4eeb3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jojotown.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jojotown.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StoreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/StoreFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/StoreFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_19_134740_create_stores_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_19_134740_create_stores_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Accounts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Accounts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_19_140024_create_carts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_19_140024_create_carts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/carts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/carts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/genres/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/genres/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +59,18 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="jojotown: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jojotown@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jojotown: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="carts: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,6 +179,9 @@
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/vendor/larapack/hooks" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
+      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
+      <path value="$PROJECT_DIR$/vendor/bumbummen99/shoppingcart" />
     </include_path>
   </component>
   <component name="ProjectId" id="1SNadL4FYI5cpw5k9rkVoyyW4SK" />
@@ -199,17 +222,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ProductTest.製品ページで適切な表示がされているかどうか">
-    <configuration name="AuthCheckFeatureTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.GenrePageTest.ジャンルページが正しく表示されているかどうか">
     <configuration name="AuthCheckFeatureTest.ログイン後のアカウントページへのリダイレクト" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="ログイン後のアカウントページへのリダイレクト" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="AuthCheckFeatureTest.新規登録できるかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AuthCheckFeatureTest" file="$PROJECT_DIR$/tests/Feature/AuthCheckFeatureTest.php" method="新規登録できるかどうか" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GenrePageTest.ジャンルページが正しく表示されているかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\GenrePageTest" file="$PROJECT_DIR$/tests/Feature/GenrePageTest.php" method="ジャンルページが正しく表示されているかどうか" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ProductTest.製品が適切に表示されているかどうか" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -222,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.GenrePageTest.ジャンルページが正しく表示されているかどうか" />
         <item itemvalue="PHPUnit.ProductTest.製品ページで適切な表示がされているかどうか" />
         <item itemvalue="PHPUnit.ProductTest.製品が適切に表示されているかどうか" />
         <item itemvalue="PHPUnit.AuthCheckFeatureTest.ログイン後のアカウントページへのリダイレクト" />
         <item itemvalue="PHPUnit.AuthCheckFeatureTest.新規登録できるかどうか" />
-        <item itemvalue="PHPUnit.AuthCheckFeatureTest" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +264,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571406593609</updated>
       <workItem from="1571406639210" duration="7570000" />
-      <workItem from="1571454261103" duration="47738000" />
+      <workItem from="1571454261103" duration="61055000" />
     </task>
     <servers />
   </component>
